@@ -35,3 +35,12 @@ function arrSum(aray) {
 }
 
 console.log(arrSum([2, 2, 2]))
+
+//Q5 Add up the numbers from a single number 
+//  Given a number, add up all the numbers from one to the number that is given.
+//  ex) an input of 4 will give you 1 + 2 + 3 + 4, which equals 10.
+function progressiveSum(number){
+
+}
+
+console.log(progressiveSum(4))
