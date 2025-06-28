@@ -52,3 +52,16 @@ console.log(progressiveSum(3))
 
 //Q6 Calculate the time
 //  Given a number in seconds, return this number in mm:ss format.
+function calcTime(seconds) {
+    let timerSeconds = seconds % 60;
+    let timerMinutes = Math.floor(seconds / 60); 
+    //in order to add a zero if the time in minutes is only one number long you need to convert to a string to calculate length as follows
+    if (timerMinutes.toString().length === 1) {
+        timerMinutes = '0' + timerMinutes
+    }
+    return timerMinutes + ':' + timerSeconds
+// need to take seconds and divide by 60 whole number is minutes, remainder is seconds
+
+}
+
+console.log(calcTime(50))
