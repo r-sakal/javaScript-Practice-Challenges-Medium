@@ -86,3 +86,28 @@ function getMax(bigNum) {
 // }
 
 console.log(getMax([500, 100, 60]))
+
+// Q8 Reverse a string
+//      Given a string, return the reversed string 
+//          -Use an incrementing for loop
+function reverseString(strng) {
+    //let reversedString = '';
+    // for (let i = 0; i < strng.length; ++i) {
+    //     console.log(strng[i])
+    //     reversedString = strng[i] + reversedString
+    // }
+    // return reversedString;
+    //          -Use a decrementing for loop
+    // for (let i = strng.length - 1; i >= 0; --i) {
+    //     reversedString += strng[i];
+    // }
+    // return reversedString;
+
+    //          -Use the array reverse property
+    //              in order to convert a string into an array you must use the .split('')
+    //              .reverse() reverses the array
+    //              .join('') joins the array back into a string
+    return strng.split('').reverse().join('')
+}
+
+console.log(reverseString('abc'))
