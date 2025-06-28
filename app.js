@@ -39,8 +39,16 @@ console.log(arrSum([2, 2, 2]))
 //Q5 Add up the numbers from a single number 
 //  Given a number, add up all the numbers from one to the number that is given.
 //  ex) an input of 4 will give you 1 + 2 + 3 + 4, which equals 10.
-function progressiveSum(number){
-
+function progressiveSum(num){
+    let total = 0;
+    for (let i = 1; i <= num; ++i) {
+        console.log(i)
+        total = total + i
+    }
+    return total;
 }
 
-console.log(progressiveSum(4))
+console.log(progressiveSum(3))
+
+//Q6 Calculate the time
+//  Given a number in seconds, return this number in mm:ss format.
