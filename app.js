@@ -113,7 +113,7 @@ function reverseString(strng) {
 console.log(reverseString('abc'))
 
 // Q9 Turn every element in an array into 0
-//      Given an array of elements, return the same leength array filled with 0's.
+//      Given an array of elements, return the same length array filled with 0's.
 //          convertToZeros([5, 100, 0])
 //          convertToZeros([12])
 //          convertToZeros([1, 2, 3, 4, 5])
