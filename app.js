@@ -117,7 +117,21 @@ console.log(reverseString('abc'))
 //          convertToZeros([5, 100, 0])
 //          convertToZeros([12])
 //          convertToZeros([1, 2, 3, 4, 5])
-//
-//      -Solution 1: For loop
-//      -Solution 2: Array 'fill'
-//      -Solution 3: Array 'map'
+function convertToZeros(zeros) {
+
+    //      -Solution 1: For loop
+    // for (let i = 0; i < zeros.length; ++i) {
+    //     zeros[i] = 0
+    // }
+    // return zeros;
+    
+    //      -Solution 2: Array 'fill'
+    // return new Array(zeros.length).fill(0);
+    
+    //      -Solution 3: Array 'map'
+    //map converts an element in an array to something else using .map(elem => elem * 2)
+    //the latter part being what you control to make it change in the new array
+    return zeros.map(elem => 0);
+}
+console.log(convertToZeros([5, 100, 0]));
+
