@@ -135,3 +135,24 @@ function convertToZeros(zeros) {
 }
 console.log(convertToZeros([5, 100, 0]));
 
+//Q10 Filter out all the apples
+        // Given an array of fruits, if it is an apple remove it from the array.
+// removesApples(['Banana', 'Apple', 'Orange', 'Apple'])
+// removesApples(['Tomato', 'Orange', 'Banana'])
+// removesApples(['Banana', 'Orange', 'Apple'])
+function removeApples(fruit) {
+
+    //  Solution 1 For Loop
+    // let noApples = []
+    // for (let i = 0; i < fruit.length; ++i) {
+    //     if (fruit[i] !== 'Apple'){
+    //         noApples.push(fruit[i]);
+    //     }
+    //     }
+    //     return noApples;
+
+    //  Solution 2 Array 'filter'
+    return fruit.filter(elem => elem !== 'Apple')
+     
+}
+console.log(removeApples(['Bannna', 'Apple', 'Orange']))
